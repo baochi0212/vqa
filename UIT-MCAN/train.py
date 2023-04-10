@@ -169,6 +169,9 @@ def main():
             net.eval()
             sample_example(metrics, net, test_dataset)
             max_f1 = test_returned["F1"]
+            #write result to json file
+            with open("./log_best_result.json", 'w') as f:
+                json.dump(results['eval'], f, indent=3)
             torch.save(results, os.path.join(config.model_checkpoint, f"model_best.pth"))
 
         from_fold = 0
