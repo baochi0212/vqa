@@ -98,6 +98,8 @@ def main():
     test_image_dir = config.test_image_dir
     metrics.vocab = vocab
     train_dataset = ViVQA(config.json_train_path, vocab, train_image_dir)
+    for i in range(len(train_dataset)):
+        train_dataset[i]
     test_dataset = ViVQA(config.json_test_path, train_dataset.vocab, test_image_dir)
     train_loader, test_loader = get_loader(train_dataset, test_dataset, k_fold=False)
     # if os.path.isfile(os.path.join(config.model_checkpoint, "folds.pkl")):
