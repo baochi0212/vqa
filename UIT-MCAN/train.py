@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.backends.cudnn as cudnn
 
-from tqdm import tqdm
+from tqdm.auto import tqdm
 
 import numpy as np
 import pickle
@@ -37,7 +37,7 @@ def run(net, loader, fold_idx, optimizer, tracker, train=False, prefix='', epoch
         f1_tracker = tracker.track('{}_F1'.format(prefix), tracker_class(**tracker_params))
 
 
-    tq = tqdm(loader, desc='Epoch {:03d}'.format(epoch), ncols=0)
+    tq = tqdm(loader, desc='Epoch {:03d}'.format(epoch))
     loss_objective = nn.CrossEntropyLoss(label_smoothing=0.2).cuda()
     batch_loss = 0
     for i, (v, q, a) in enumerate(tq):
