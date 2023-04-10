@@ -33,7 +33,7 @@ if __name__ == '__main__':
     vocab = Vocab([config.json_train_path, config.json_test_path], 
                             specials=["<pad>", "<sos", "<eos>"])
     metrics.vocab = vocab
-    test_dataset = ViVQA(config.json_test_path, vocab, test_image_dir)
+    test_dataset = ViVQA(config.json_test_path, vocab, config.test_image_dir)
     #log inference
     saved_info = torch.load(config.best_model_checkpoint)
     from_epoch = saved_info["epoch"]
