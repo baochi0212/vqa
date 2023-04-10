@@ -17,7 +17,7 @@ task = 'OpenEnded'
 dataset = 'ViVQA'
 
 # training config
-epochs = 30
+epochs = 3
 batch_size = 64
 initial_lr = 5e-5  # default Adam lr
 lr_halflife = 50000  # in iterations
@@ -25,7 +25,8 @@ data_workers = 0
 model_checkpoint = "./saved_models"
 best_model_checkpoint = "./saved_models"
 tmp_model_checkpoint = "./saved_models"
-start_from = "./saved_models/model_best.pth"
+# start_from = "./saved_models/model_best.pth"
+start_from = None
 backbone = "resnet152"
 
 ## self-attention based method configurations
