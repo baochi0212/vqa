@@ -78,7 +78,7 @@ class ViVQA(data.Dataset):
         image_id = self.image_ids[idx]
         v = self._load_image(image_id)
         if v.shape[0] == 1:
-            print(image_id)
+          v = torch.concat([v]*3, dim=0)
         return v, q, a
 
     def __len__(self):
