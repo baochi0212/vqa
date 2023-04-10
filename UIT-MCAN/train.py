@@ -112,10 +112,10 @@ def main():
 
     if config.start_from:
         print("----NOT FROM SCRATCH----")
-        saved_info = torch.load(config.start_from)
-        from_epoch = saved_info["epoch"]
-        from_fold = saved_info["fold"] + 1
-        loss = saved_info["loss"]
+`       # saved_info = torch.load(config.start_from)
+        # from_epoch = saved_info["epoch"]
+        # from_fold = saved_info["fold"] + 1
+        # loss = saved_info["loss"]`
         net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                     config.nlayers, config.dropout).cuda()
         net.load_state_dict(saved_info["weights"])
