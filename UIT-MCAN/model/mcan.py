@@ -26,7 +26,7 @@ class MCAN(nn.Module):
 
         # output classifier
         self.generator = nn.Linear(d_model, len(vocab.output_cats))
-        self.dropout = nn.Dropout(dropout)s
+        self.dropout = nn.Dropout(dropout)
 
     def key_padding_mask(self, x, padding_idx):
         "Mask out subsequent positions."
