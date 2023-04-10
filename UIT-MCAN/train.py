@@ -103,7 +103,7 @@ def main():
     # for i in range(len(train_dataset)):
     #     train_dataset[i]
     test_dataset = ViVQA(config.json_test_path, vocab, test_image_dir)
-    train_loader, test_loader = get_loader(trains_dataset, test_dataset, k_fold=False)
+    train_loader, test_loader = get_loader(train_dataset, test_dataset, k_fold=False)
     # if os.path.isfile(os.path.join(config.model_checkpoint, "folds.pkl")):
     #     folds, test_fold = pickle.load(open(os.path.join(config.model_checkpoint, "folds.pkl"), "rb"))
     # else:
