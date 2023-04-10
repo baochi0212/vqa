@@ -35,7 +35,7 @@ if __name__ == '__main__':
     metrics.vocab = vocab
     test_dataset = ViVQA(config.json_test_path, vocab, config.test_image_dir)
     #log inference
-    saved_info = torch.load(config.best_model_checkpoint)
+    saved_info = torch.load(config.best_model_checkpoint + "/model_best.pth")
     from_epoch = saved_info["epoch"]
     from_fold = saved_info["fold"] + 1
     loss = saved_info["loss"]
