@@ -69,7 +69,10 @@ class ViVQA(data.Dataset):
         image = Image.open(image_path)
 
 
-        return tf.ToTensor()(tf.Resize(config.image_size)(image))
+        image = tf.ToTensor()(tf.Resize(config.image_size)(image))
+        if image.shape[0] == 1:
+            print(image_id)
+        return image
 
     def __getitem__(self, idx):
         q = self.vocab._encode_question(self.questions[idx])
