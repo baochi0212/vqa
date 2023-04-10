@@ -21,6 +21,7 @@ def sample_example(net, dataset):
     with open(config.log_file, 'w') as f:
         for i in range(len(dataset)):
             v, q, a = [item.cuda() for item in dataset[i]]
+            print([x.shape for x in [v, q, a]])
             out = net(v, q)
             prediction, answer, question = metrics.predict(out.cput(), a.cpu(), q.cpu())
             for pred, a, q in zip(prediction, answer, question):
