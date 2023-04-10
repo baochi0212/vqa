@@ -68,7 +68,7 @@ def run(net, loader, fold_idx, optimizer, tracker, train=False, prefix='', epoch
         # else:
         #     tq.set_postfix(accuracy=fmt(acc_tracker.mean.value), 
         #                     precision=fmt(pre_tracker.mean.value), recall=fmt(rec_tracker.mean.value), f1=fmt(f1_tracker.mean.value))
-        tq.update()
+        # tq.update()
 
         # if train:
         #     torch.save({
