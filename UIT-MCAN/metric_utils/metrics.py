@@ -26,6 +26,13 @@ class Metrics(object):
             "recall": recall,
             "F1": f1
         }
+    def predict(self, predicted, true, question):
+        predicted = self.vocab._decode_answer(predicted)
+        true = self.vocab._decode_answer(true)
+        question = self.vocab._decode_question(question)
+
+        return predicted, true, question
+
 
     def evaluate(self, net, test_dataset, tracker, prefix=''):
         net.eval()
