@@ -129,6 +129,8 @@ def main():
         net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                     config.nlayers, config.dropout).cuda()
         net.load_state_dict(saved_info["weights"])
+        from_epoch = 0
+        from_fold = 0
     else:
         from_epoch = 0
         from_fold = 0
