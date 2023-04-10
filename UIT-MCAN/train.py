@@ -116,7 +116,7 @@ def main():
         #check the test
         #metrics + test dataset
         #log inference
-        saved_info = torch.load(config.best_model_checkpoint + "/model_best.pth")
+        saved_info = torch.load(config.best_model_checkpoint + "/model_last.pth")
         net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                     config.nlayers, config.dropout).cuda()
         # torch.save({
