@@ -22,7 +22,7 @@ def sample_example(net, dataset):
         for i in range(len(dataset)):
             v, q, a = [item.cuda().unsqueeze(0) for item in dataset[i]]
             out = net(v, q)
-            prediction, answer, question = metrics.predict(out.cput(), a.cpu(), q.cpu())
+            prediction, answer, question = metrics.predict(out.cpu(), a.cpu(), q.cpu())
             for pred, a, q in zip(prediction, answer, question):
                 f.write(f"Question: {q}--- Prediction: {prediction}--- Answer: {answer}\n")
         f.close()
