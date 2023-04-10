@@ -121,8 +121,8 @@ def get_loader(train_dataset, test_dataset=None, k_fold=True):
                     pin_memory=True,
                     num_workers=config.data_workers)
         test_loader = torch.utils.data.DataLoader(test_dataset,
-                            batch_size=config.batch_size,
-                            shuffle=True,
+                            batch_size=32,
+                            shuffle=False,
                             pin_memory=True,
                             num_workers=config.data_workers)
                 
