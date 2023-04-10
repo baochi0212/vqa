@@ -39,7 +39,8 @@ def run(net, loader, fold_idx, optimizer, tracker, train=False, prefix='', epoch
 
     tq = tqdm(loader, desc='Epoch {:03d}'.format(epoch), ncols=0)
     loss_objective = nn.CrossEntropyLoss(label_smoothing=0.2).cuda()
-    for v, q, a in tq:
+    batch_loss = 0
+    for i, (v, q, a) in enumerate(tq):
         v = v.cuda()
         q = q.cuda()
         a = a.cuda()
@@ -51,6 +52,10 @@ def run(net, loader, fold_idx, optimizer, tracker, train=False, prefix='', epoch
             loss_tracker.append(loss.item())
             loss.backward()
             optimizer.step()
+            batch_loss += loss.item()
+            if i % 50 == 0:
+                print("Loss", batch_loss)
+                batch_loss = 0
         else:
             loss = np.array(0)
             acc_tracker.append(scores["accuracy"])
@@ -58,11 +63,11 @@ def run(net, loader, fold_idx, optimizer, tracker, train=False, prefix='', epoch
             rec_tracker.append(scores["recall"])
             f1_tracker.append(scores["F1"])
         fmt = '{:.4f}'.format
-        if train:
-            tq.set_postfix(loss=fmt(loss.item()))
-        else:
-            tq.set_postfix(accuracy=fmt(acc_tracker.mean.value), 
-                            precision=fmt(pre_tracker.mean.value), recall=fmt(rec_tracker.mean.value), f1=fmt(f1_tracker.mean.value))
+        # if train:
+        #     tq.set_postfix(loss=fmt(loss.item()))
+        # else:
+        #     tq.set_postfix(accuracy=fmt(acc_tracker.mean.value), 
+        #                     precision=fmt(pre_tracker.mean.value), recall=fmt(rec_tracker.mean.value), f1=fmt(f1_tracker.mean.value))
         tq.update()
 
         # if train:
