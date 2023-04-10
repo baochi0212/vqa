@@ -35,8 +35,8 @@ if __name__ == '__main__':
     metrics.vocab = vocab
     test_dataset = ViVQA(config.json_test_path, vocab, config.test_image_dir)
     #log inference
-    saved_info = torch.load(config.best_model_checkpoint + "/model_best.pth")
-    net = MCAN( vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
+    saved_info = torch.load(config.best_model_checkpoint + "/model_last.pth")
+    net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                 config.nlayers, config.dropout).cuda()
     net.load_state_dict(saved_info["weights"])
     sample_example(net, test_dataset)
