@@ -70,8 +70,6 @@ class ViVQA(data.Dataset):
 
 
         image = tf.ToTensor()(tf.Resize(config.image_size)(image))
-        if image.shape[0] == 1:
-            print(image_id)
         return image
 
     def __getitem__(self, idx):
@@ -79,7 +77,8 @@ class ViVQA(data.Dataset):
         a = self.vocab._encode_answer(self.answers[idx])
         image_id = self.image_ids[idx]
         v = self._load_image(image_id)
-
+        if v.shape[0] == 1:
+            print(image_id)
         return v, q, a
 
     def __len__(self):
@@ -132,4 +131,5 @@ if __name__ == '__main__':
     json_path = "/home/ubuntu/learning/VQA/UIT-MCAN/ViVQA/vivqa_train_2017.json"
     image_dir = "/home/ubuntu/learning/VQA/UIT-MCAN/ViVQA/images/train"
     train_dataset = ViVQA(json_path, None, image_dir)
-    print(train_dataset[2][1:])
+    for i in range(len(train_dataset)):
+        train_dataset[i]
