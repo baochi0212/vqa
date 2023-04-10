@@ -25,7 +25,7 @@ data_workers = 0
 model_checkpoint = "./saved_models"
 best_model_checkpoint = "./saved_models"
 tmp_model_checkpoint = "./saved_models"
-start_from = None
+start_from = "./saved_models/model_best.pth"
 backbone = "resnet152"
 
 ## self-attention based method configurations
