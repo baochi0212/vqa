@@ -161,18 +161,6 @@ def main():
         torch.save(results, os.path.join(config.model_checkpoint, f"model_last.pth"))
         if test_returned["F1"] > max_f1:
             print("----NOT FROM SCRATCH, check test----")
-            saved_info = torch.load(config.start_from)
-            #check the test
-            #metrics + test dataset
-            #log inference
-            saved_info = torch.load(config.best_model_checkpoint + "/model_best.pth")
-            net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
-                                        config.nlayers, config.dropout).cuda()
-            # torch.save({
-            #     "weights": net.state_dict(),
-            # }, './saved_models/temp.pth')
-            # net.load_state_dict(torch.load("./saved_models/temp.pth")['weights'])
-            net.load_state_dict(saved_info["weights"])
             net.eval()
             sample_example(metrics, net, test_dataset)
             max_f1 = test_returned["F1"]
@@ -181,9 +169,6 @@ def main():
                 json.dump(results['eval'], f, indent=3)
             torch.save(results, os.path.join(config.model_checkpoint, f"model_best.pth"))
 
-        from_fold = 0
-
-        print("+"*13)
 
     from_epoch = 0
 
