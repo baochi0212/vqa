@@ -18,7 +18,6 @@ class DeepCoAttention(nn.Module):
         )
 
     def forward(self, v, q, attn_mask, key_padding_mask):
-        print("Transformer input", v.shape, q.shape)
         q_encoded = self.encoder(src=q, mask=attn_mask, src_key_padding_mask=key_padding_mask)
         v_encoded = self.decoder(tgt=v, memory=q_encoded)
 
