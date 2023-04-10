@@ -18,6 +18,7 @@ from metric_utils.tracker import Tracker
 import os
 
 def sample_example(net, dataset):
+    print("TEST NUMBER:", len(dataset))
     with open(config.log_file, 'w') as f:
         for i in range(len(dataset)):
             v, q, a = [item.cuda().unsqueeze(0) for item in dataset[i]]
