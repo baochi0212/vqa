@@ -111,7 +111,7 @@ def main():
     #     pickle.dump((folds, test_fold), open(os.path.join(config.model_checkpoint, "folds.pkl"), "wb"))
 
     if config.start_from:
-        print("----NOT FROM SCRATCH, check test first----")
+        print("----NOT FROM SCRATCH, check test----")
         saved_info = torch.load(config.start_from)
         #check the test
         #metrics + test dataset
@@ -125,7 +125,7 @@ def main():
         # net.load_state_dict(torch.load("./saved_models/temp.pth")['weights'])
         net.load_state_dict(saved_info["weights"])
         net.eval()
-        sample_example(net, test_dataset)
+        sample_example(metrics, net, test_dataset)
         net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                     config.nlayers, config.dropout).cuda()
         net.load_state_dict(saved_info["weights"])

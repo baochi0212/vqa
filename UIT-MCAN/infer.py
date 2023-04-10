@@ -17,7 +17,7 @@ from metric_utils.tracker import Tracker
 
 import os
 
-def sample_example(net, dataset):
+def sample_example(metrics, net, dataset):
     print("TEST NUMBER:", len(dataset))
     with open(config.log_file, 'w') as f:
         for i in range(len(dataset)):
@@ -49,4 +49,4 @@ if __name__ == '__main__':
     # net.load_state_dict(torch.load("./saved_models/temp.pth")['weights'])
     net.load_state_dict(saved_info["weights"])
     net.eval()
-    sample_example(net, test_dataset)
+    sample_example(metrics, net, test_dataset)
