@@ -96,8 +96,8 @@ def main():
     vocab = None
     train_image_dir = config.train_image_dir
     test_image_dir = config.test_image_dir
-    metrics.vocab = vocab
     train_dataset = ViVQA(config.json_train_path, vocab, train_image_dir)
+    metrics.vocab = train_dataset.vocab
     # for i in range(len(train_dataset)):
     #     train_dataset[i]
     test_dataset = ViVQA(config.json_test_path, train_dataset.vocab, test_image_dir)
