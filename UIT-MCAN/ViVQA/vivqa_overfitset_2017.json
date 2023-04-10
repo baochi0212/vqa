@@ -1,0 +1,644 @@
+{
+   "annotations": [
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc b\u00ecnh l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "68857"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a con m\u00e8o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u x\u00e1m",
+         "img_id": "119776"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a \u00e1o thun l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "138621"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a ch\u0103n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u t\u00eda",
+         "img_id": "21138"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a ng\u00e2n h\u00e0ng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "520551"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00e1o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "44135"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a b\u00e0n ch\u00e2n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "56303"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a nh\u1eefng ng\u1ecdn n\u00fai l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "531450"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a v\u00f2i n\u01b0\u1edbc l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "532482"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a l\u00e1 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "95320"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a r\u00e8m l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "352143"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a m\u00e1y t\u00ednh x\u00e1ch tay l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "184589"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a b\u1ea7u tr\u1eddi l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "93667"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe l\u00e0 g\u00ec",
+         "answer": "m\u00e0u x\u00e1m",
+         "img_id": "160910"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a b\u1ed3n r\u1eeda l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "438315"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a d\u1ea5u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "362278"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111\u1ea7u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "262756"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a t\u00f2a \u00e1n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "397772"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe bu\u00fdt l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "480064"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00e1nh s\u00e1ng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "68223"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a d\u0129a nh\u1ef1a l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "162828"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a t\u01b0\u1eddng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u t\u00eda",
+         "img_id": "281700"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a ng\u1ecdn l\u1eeda l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "222191"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a gh\u1ebf l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "284464"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc xe l\u00e0 g\u00ec",
+         "answer": "m\u00e0u x\u00e1m",
+         "img_id": "272040"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a con ch\u00f3 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "360165"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a th\u00e2n c\u00e2y l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "513214"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc \u0111\u0129a l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "23158"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a ng\u01b0\u1eddi ph\u1ee5 n\u1eef l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "101215"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111\u01b0\u1eddng \u0111ua l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "73843"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a nh\u00e0 v\u1ec7 sinh l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "507495"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a m\u1eb7t tr\u01b0\u1edbc l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "66283"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a g\u1ea5u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u x\u00e1m",
+         "img_id": "2770"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a h\u00e0ng r\u00e0o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "396494"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a con m\u00e8o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "118997"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a d\u00e2y l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "25516"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a m\u0169 b\u1ea3o hi\u1ec3m l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "270524"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111\u1ed9ng v\u1eadt l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "335092"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111\u1ed3ng h\u1ed3 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "82735"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00f4 t\u00f4 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "447135"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a c\u00f4ng vi\u00ean l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "120385"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a g\u1ea1ch l\u00e0 g\u00ec",
+         "answer": "m\u00e0u x\u00e1m",
+         "img_id": "43011"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a l\u00f4ng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "131731"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111i\u1ec3m d\u1eebng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "492705"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a t\u01b0\u1eddng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "181104"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00e1o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "579798"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a gh\u1ebf l\u00e0 g\u00ec",
+         "answer": "m\u00e0u t\u00eda",
+         "img_id": "386029"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe t\u1ea3i l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "408975"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a c\u00e1c chuy\u1ebfn t\u00e0u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "39556"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a con m\u00e8o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "190580"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a c\u00e1i b\u00e1t l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "74002"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a b\u00f4ng hoa l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "319612"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "455198"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111\u00e8n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "488812"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a v\u00f2i n\u01b0\u1edbc l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "103158"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a b\u00e0n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "123646"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a g\u1ea5u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "454832"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a d\u00e2y n\u1ecbch l\u00e0 g\u00ec",
+         "answer": "m\u00e0u t\u00eda",
+         "img_id": "305690"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111\u1ed3ng h\u1ed3 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u t\u00eda",
+         "img_id": "101675"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00e1nh s\u00e1ng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "80739"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111\u00e8n giao th\u00f4ng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "244478"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a nh\u1eefng con ng\u1ef1a l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "494637"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a d\u1ea5u hi\u1ec7u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "443735"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a c\u00e2y l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "340103"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a con v\u1eadt \u0111ang \u0111i b\u1ed9 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "528882"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc b\u00ecnh l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "114749"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe bu\u00fdt l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "257013"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe m\u00e1y l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "574739"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a b\u1ec1 m\u1eb7t l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "530154"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00e1o kho\u00e1c l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "43829"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc gh\u1ebf d\u00e0i l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "469667"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc t\u00e0u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "425072"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a g\u1ea5u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "115681"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a d\u1ea5u hi\u1ec7u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "275037"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a hoa lan l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "90140"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a l\u00e1 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "534331"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a qu\u1ea7n \u00e1o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "565081"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a \u0111\u1ed3 ch\u01a1i l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "308522"
+      },
+      {
+         "question": "m\u00e0u t\u00f3c l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "516541"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a con ch\u00f3 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "158718"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a ng\u01b0\u1eddi an \u1ee7i l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "19146"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a g\u1ea5u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "7224"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111i\u1ec3m \u0111\u00e1nh d\u1ea5u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "274759"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a con ch\u00f3 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "422301"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a g\u1ea5u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "238960"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc xe l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "274022"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a con ng\u1ef1a l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "373830"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc b\u00ecnh l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "521657"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a b\u0103ng gh\u1ebf l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "135459"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a gh\u1ebf l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "416440"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a nh\u00e0 v\u1ec7 sinh l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "274356"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a c\u00e1i d\u00f9 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "239828"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a c\u00e1c d\u1ea5u hi\u1ec7u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "228727"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a s\u00e0n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "267552"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a c\u00e2y l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "76187"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a c\u1ed5ng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "175270"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe m\u00e1y l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "454745"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a b\u00f4ng hoa l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "580790"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "517958"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe \u0111\u1ea1p l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "414647"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a t\u01b0\u1eddng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "494383"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc \u00f4 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "480876"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a ch\u0103n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "24253"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a th\u1ee9 \u0111ang ng\u1ee7 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "534959"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a c\u00e1i t\u1ee7 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u tr\u1eafng",
+         "img_id": "564451"
+      },
+      {
+         "question": "m\u00e0u t\u00f3c l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "133937"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc thuy\u1ec1n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "400275"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a t\u00f2a \u00e1n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u t\u00eda",
+         "img_id": "114474"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a len l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "241461"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a c\u1ecf l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "447108"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a b\u1ea7u tr\u1eddi l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "433968"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a b\u0103ng gh\u1ebf l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "517931"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00e1o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "292312"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc t\u00e0u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "556647"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a g\u1ea5u b\u00f4ng l\u00e0 g\u00ec",
+         "answer": "m\u00e0u x\u00e1m",
+         "img_id": "521806"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a nh\u00e0 v\u1ec7 sinh l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "86908"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a s\u00e0n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u x\u00e1m",
+         "img_id": "134902"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00e1o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "469035"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a h\u00e0nh kh\u00e1ch l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "385305"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a v\u00e1n l\u01b0\u1edbt l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "434004"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a th\u00e1p l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111\u1ecf",
+         "img_id": "177922"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u00e1o l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh d\u01b0\u01a1ng",
+         "img_id": "504917"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111\u1ed9ng c\u01a1 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u \u0111en",
+         "img_id": "318164"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a chi\u1ebfc m\u0169 l\u00e0 g\u00ec",
+         "answer": "m\u00e0u n\u00e2u",
+         "img_id": "458935"
+      },
+      {
+         "question": "m\u00e0u s\u1eafc c\u1ee7a b\u00f4ng hoa l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "518883"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a \u0111i\u1ec3m \u0111\u00e1nh d\u1ea5u l\u00e0 g\u00ec",
+         "answer": "m\u00e0u cam",
+         "img_id": "274759"
+      },
+      {
+         "question": "m\u00e0u c\u1ee7a xe bu\u00fdt / thuy\u1ec1n l\u00e0 g\u00ec",
+         "answer": "m\u00e0u v\u00e0ng",
+         "img_id": "54869"
+      },
+      {
+         "question": "m\u00e0u m\u1eaft l\u00e0 g\u00ec",
+         "answer": "m\u00e0u xanh l\u00e1",
+         "img_id": "542165"
+      }
+   ]
+}

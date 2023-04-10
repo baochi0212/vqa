@@ -97,7 +97,7 @@ def main():
                             specials=["<pad>", "<sos", "<eos>"])
     train_image_dir = config.train_image_dir
     test_image_dir = config.test_image_dir
-    train_dataset = ViVQA(config.json_train_path, vocab, train_image_dir)
+    train_dataset = ViVQA(config.json_overfit_path, vocab, train_image_dir)
     metrics.vocab = vocab
     # for i in range(len(train_dataset)):
     #     train_dataset[i]
@@ -114,7 +114,7 @@ def main():
         from_epoch = saved_info["epoch"]
         from_fold = saved_info["fold"] + 1
         loss = saved_info["loss"]
-        net = nn.DataParallel(MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
+        net = nn.DataParallel(MCAN( vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                     config.nlayers, config.dropout)).cuda()
         net.load_state_dict(saved_info["weights"])
     else:
