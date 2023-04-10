@@ -94,7 +94,7 @@ def main():
     #                         specials=["<pad>", "<sos", "<eos>"], vectors=config.word_embedding)
     #     pickle.dump(vocab, open(os.path.join(config.model_checkpoint, "vocab.pkl"), "wb"))
     vocab = Vocab([config.json_train_path, config.json_test_path], 
-                            specials=["<pad>", "<sos", "<eos>"], vectors=config.word_embedding)
+                            specials=["<pad>", "<sos", "<eos>"])
     train_image_dir = config.train_image_dir
     test_image_dir = config.test_image_dir
     train_dataset = ViVQA(config.json_train_path, vocab, train_image_dir)
