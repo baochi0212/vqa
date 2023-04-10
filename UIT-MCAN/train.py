@@ -16,6 +16,8 @@ from metric_utils.metrics import Metrics
 from metric_utils.tracker import Tracker
 from infer import sample_example
 import os
+import warnings
+warnings.filterwarnings('ignore')
 
 
 total_iterations = 0
