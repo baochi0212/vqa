@@ -24,7 +24,11 @@ def sample_example(net, dataset):
             out = net(v, q)
             prediction, answer, question = metrics.predict(out.cpu(), a.cpu(), q.cpu())
             for pred, a, q in zip(prediction, answer, question):
-                f.write(f"Question: {q}--- Prediction: {prediction}--- Answer: {answer}\n")
+                if pred == a:
+                    f.write(f"Question: {q}--- True Prediction: {prediction}--- Answer: {answer}\n")
+                else:
+                    f.write(f"Question: {q}--- Wrong Prediction: {prediction}--- Answer: {answer}\n")
+
         f.close()
 
 if __name__ == '__main__':
