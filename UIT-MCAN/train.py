@@ -112,7 +112,7 @@ def main():
 
     if config.start_from:
         print("----NOT FROM SCRATCH----")
-        # saved_info = torch.load(config.start_from)
+        saved_info = torch.load(config.start_from)
         # from_epoch = saved_info["epoch"]
         # from_fold = saved_info["fold"] + 1
         # loss = saved_info["loss"]`
