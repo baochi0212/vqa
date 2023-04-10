@@ -1,4 +1,5 @@
 from torch import nn
+import torch
 import torchvision
 
 class TextEmbedding(nn.Module):
@@ -35,9 +36,15 @@ class VisualEmbedding(nn.Module):
         self.proj = nn.Linear(512, d_model)
         self.dropout = nn.Dropout(dropout)
 
-    def forward(self, v):
+    def forward(self, v, patch=32):
         n, c, h, w = v.size()
+        v = v.view(-1, c, patch, patch)
         v = self.model(v)
+        v = v.view(n, -1, v.shape[-1])
         v = self.proj(v)
 
-        return v
+        return v 
+        
+if __name__ == '__main__':
+    v = torch.rand([32, 3, 448, 448])
+    print(VisualEmbedding(512)(v).shape)

@@ -11,6 +11,7 @@ json_test_path = "./ViVQA/vivqa_test_2017.json"
 image_size = (448, 448)
 train_image_dir = "./ViVQA/images/train"
 test_image_dir = "./ViVQA/images/test"
+image_patch_size = 32
 task = 'OpenEnded'
 dataset = 'ViVQA'
 

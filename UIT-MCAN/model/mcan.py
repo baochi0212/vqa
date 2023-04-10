@@ -8,7 +8,7 @@ from model.deep_co_attention import DeepCoAttention
 from model.fusion_model import FusionModel
 
 class MCAN(nn.Module):
-    def __init__(self, vocab, backbone, d_model, embedding_dim, dff, nheads, nlayers, dropout):
+    def __init__(self, vocab, backbone, d_model, embedding_dim, image_patch_size, dff, nheads, nlayers, dropout):
         super(MCAN, self).__init__()
 
         self.padding_idx = vocab.stoi["<pad>"]
@@ -18,6 +18,7 @@ class MCAN(nn.Module):
         self.text_embedding = TextEmbedding(vocab, embedding_dim, d_model, dropout)
 
         # deep co-attention learning
+        self.image_patch_size = image_patch_size
         self.deep_co_attention = DeepCoAttention(d_model, dff, nheads, nlayers, dropout)
 
         # fusion model
@@ -25,7 +26,7 @@ class MCAN(nn.Module):
 
         # output classifier
         self.generator = nn.Linear(d_model, len(vocab.output_cats))
-        self.dropout = nn.Dropout(dropout)
+        self.dropout = nn.Dropout(dropout)s
 
     def key_padding_mask(self, x, padding_idx):
         "Mask out subsequent positions."
@@ -37,7 +38,7 @@ class MCAN(nn.Module):
 
     def forward(self, v, q):
         device = v.device
-        v_embedded = self.visual_embedding(v)
+        v_embedded = self.visual_embedding(v, patch=self.image_patch_size)
         q_embedded = self.text_embedding(q)
 
         q_attn_mask = self.subsequent_mask(q_embedded.size(1)).to(device)
