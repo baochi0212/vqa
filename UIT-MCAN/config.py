@@ -36,3 +36,6 @@ nheads = 8
 nlayers = 4
 dropout = 0.5
 word_embedding = "fasttext.vi.300d"
+
+#log infer
+log_file = './log_inference'
