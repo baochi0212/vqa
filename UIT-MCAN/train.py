@@ -115,8 +115,8 @@ def main():
         from_epoch = saved_info["epoch"]
         from_fold = saved_info["fold"] + 1
         loss = saved_info["loss"]
-        net = nn.DataParallel(MCAN( vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
-                                    config.nlayers, config.dropout)).cuda()
+        net = MCAN( vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
+                                    config.nlayers, config.dropout).cuda()
         net.load_state_dict(saved_info["weights"])
     else:
         from_epoch = 0
@@ -125,8 +125,8 @@ def main():
         loss = None
 
     if net is None:
-        net = nn.DataParallel(MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
-                                    config.nlayers, config.dropout)).cuda()
+        net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
+                                    config.nlayers, config.dropout).cuda()
     optimizer = optim.Adam([p for p in net.parameters() if p.requires_grad], lr=config.initial_lr)
 
     tracker = Tracker()
