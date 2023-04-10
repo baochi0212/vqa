@@ -9,8 +9,8 @@ preprocessed_path = './resnet-14x14.h5'  # path where preprocessed features are 
 json_train_path = "./ViVQA/vivqa_train_2017.json"
 json_test_path = "./ViVQA/vivqa_test_2017.json"
 image_size = (448, 448)
-train_image_dir = "/home/ubuntu/learning/VQA/UIT-MCAN/ViVQA/images/train"
-test_image_dir = "/home/ubuntu/learning/VQA/UIT-MCAN/ViVQA/images/test"
+train_image_dir = "./ViVQA/images/train"
+test_image_dir = "./ViVQA/images/test"
 task = 'OpenEnded'
 dataset = 'ViVQA'
 
