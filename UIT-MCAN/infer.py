@@ -43,4 +43,5 @@ if __name__ == '__main__':
     # }, './saved_models/temp.pth')
     # net.load_state_dict(torch.load("./saved_models/temp.pth")['weights'])
     net.load_state_dict(saved_info["weights"])
+    net.eval()
     sample_example(net, test_dataset)
