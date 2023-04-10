@@ -23,6 +23,7 @@ metrics = Metrics()
 
 def run(net, loader, fold_idx, optimizer, tracker, train=False, prefix='', epoch=0):
     """ Run an epoch over the given loader """
+    print(f"Training: {train}, num jobs: {len(loader)}")
     if train:
         net.train()
         tracker_class, tracker_params = tracker.MovingMeanMonitor, {'momentum': 0.99}
