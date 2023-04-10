@@ -98,7 +98,7 @@ def main():
                             specials=["<pad>", "<sos", "<eos>"])
     train_image_dir = config.train_image_dir
     test_image_dir = config.test_image_dir
-    train_dataset = ViVQA(config.json_overfit_path, vocab, train_image_dir)
+    train_dataset = ViVQA(config.json_train_path, vocab, train_image_dir)
     metrics.vocab = vocab
     # for i in range(len(train_dataset)):
     #     train_dataset[i]
