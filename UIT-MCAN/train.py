@@ -93,14 +93,15 @@ def main():
     #     vocab = Vocab([config.json_train_path, config.json_test_path], 
     #                         specials=["<pad>", "<sos", "<eos>"], vectors=config.word_embedding)
     #     pickle.dump(vocab, open(os.path.join(config.model_checkpoint, "vocab.pkl"), "wb"))
-    vocab = None
+    vocab = Vocab([config.json_train_path, config.json_test_path], 
+                            specials=["<pad>", "<sos", "<eos>"], vectors=config.word_embedding)
     train_image_dir = config.train_image_dir
     test_image_dir = config.test_image_dir
     train_dataset = ViVQA(config.json_train_path, vocab, train_image_dir)
-    metrics.vocab = train_dataset.vocab
+    metrics.vocab = vocab
     # for i in range(len(train_dataset)):
     #     train_dataset[i]
-    test_dataset = ViVQA(config.json_test_path, train_dataset.vocab, test_image_dir)
+    test_dataset = ViVQA(config.json_test_path, vocab, test_image_dir)
     train_loader, test_loader = get_loader(train_dataset, test_dataset, k_fold=False)
     # if os.path.isfile(os.path.join(config.model_checkpoint, "folds.pkl")):
     #     folds, test_fold = pickle.load(open(os.path.join(config.model_checkpoint, "folds.pkl"), "rb"))
@@ -113,7 +114,7 @@ def main():
         from_epoch = saved_info["epoch"]
         from_fold = saved_info["fold"] + 1
         loss = saved_info["loss"]
-        net = nn.DataParallel(MCAN(train_dataset.vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
+        net = nn.DataParallel(MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                     config.nlayers, config.dropout)).cuda()
         net.load_state_dict(saved_info["weights"])
     else:
@@ -123,7 +124,7 @@ def main():
         loss = None
 
     if net is None:
-        net = nn.DataParallel(MCAN(train_dataset.vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
+        net = nn.DataParallel(MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                     config.nlayers, config.dropout)).cuda()
     optimizer = optim.Adam([p for p in net.parameters() if p.requires_grad], lr=config.initial_lr)
 
