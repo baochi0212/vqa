@@ -14,7 +14,7 @@ from model.mcan import MCAN
 from data_utils.vivqa_extracted_features import ViVQA, get_loader
 from metric_utils.metrics import Metrics
 from metric_utils.tracker import Tracker
-
+from infer import sample_example
 import os
 
 
@@ -111,11 +111,21 @@ def main():
     #     pickle.dump((folds, test_fold), open(os.path.join(config.model_checkpoint, "folds.pkl"), "wb"))
 
     if config.start_from:
-        print("----NOT FROM SCRATCH----")
+        print("----NOT FROM SCRATCH, check test first----")
         saved_info = torch.load(config.start_from)
-        # from_epoch = saved_info["epoch"]
-        # from_fold = saved_info["fold"] + 1
-        # loss = saved_info["loss"]`
+        #check the test
+        #metrics + test dataset
+        #log inference
+        saved_info = torch.load(config.best_model_checkpoint + "/model_best.pth")
+        net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
+                                    config.nlayers, config.dropout).cuda()
+        # torch.save({
+        #     "weights": net.state_dict(),
+        # }, './saved_models/temp.pth')
+        # net.load_state_dict(torch.load("./saved_models/temp.pth")['weights'])
+        net.load_state_dict(saved_info["weights"])
+        net.eval()
+        sample_example(net, test_dataset)
         net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                     config.nlayers, config.dropout).cuda()
         net.load_state_dict(saved_info["weights"])
