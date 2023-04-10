@@ -38,6 +38,10 @@ if __name__ == '__main__':
     saved_info = torch.load(config.best_model_checkpoint + "/model_last.pth")
     net = MCAN(vocab, config.backbone, config.d_model, config.embedding_dim, config.image_patch_size, config.dff, config.nheads, 
                                 config.nlayers, config.dropout).cuda()
-    net.eval()
-    net.load_state_dict(saved_info["weights"])
-    sample_example(net, test_dataset)
+    torch.save({
+        "weights": net.state_dict(),
+        path='./saved_models/temp.pth'
+    })
+    net.load_state_dict(torch.load("./saved_models/temp.pth")['weights'])
+    # net.load_state_dict(saved_info["weights"])s
+    # sample_example(net, test_dataset)
