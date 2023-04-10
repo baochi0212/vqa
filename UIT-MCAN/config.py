@@ -17,7 +17,7 @@ task = 'OpenEnded'
 dataset = 'ViVQA'
 
 # training config
-epochs = 3
+epochs = 10
 batch_size = 64
 initial_lr = 5e-5  # default Adam lr
 lr_halflife = 50000  # in iterations
