@@ -3,11 +3,15 @@ import json
 
 def process_json(jsonfile):
     text_dict = []
-    annotations = json.load(open(jsonfile, 'r'))['annotations']
+    image_dict = {}
+    data = json.load(open(jsonfile, 'r'))
+    annotations = data['annotations']
+    images = data['images']
+    for image in images:
+        image_dict[image['id']] = image['filename']
     for i in range(len(annotations)):
-        annotations[i]['image_id'] = f'0000000{annotations[i]["image_id"]}.jpg'
+            annotations[i]['image_id'] = image_dict[annotations[i]['image_id']]
     return annotations
-
 
 
 
